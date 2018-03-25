@@ -1,0 +1,10 @@
+/Users/fer/repo/fantasyWorldCup/core/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.deps.json
+/Users/fer/repo/fantasyWorldCup/core/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.dll
+/Users/fer/repo/fantasyWorldCup/core/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.pdb
+/Users/fer/repo/fantasyWorldCup/core/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.csproj.CoreCompileInputs.cache
+/Users/fer/repo/fantasyWorldCup/core/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.AssemblyInfoInputs.cache
+/Users/fer/repo/fantasyWorldCup/core/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.AssemblyInfo.cs
+/Users/fer/repo/fantasyWorldCup/core/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.dll
+/Users/fer/repo/fantasyWorldCup/core/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.pdb
+/Users/fer/repo/fantasyWorldCup/core/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.runtimeconfig.json
+/Users/fer/repo/fantasyWorldCup/core/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.runtimeconfig.dev.json
