@@ -1,0 +1,54 @@
+@page
+@model FantasyWorldCup.Api.Pages.Match.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Match[0].Schedule)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Match[0].TeamAScore)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Match[0].TeamBScore)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Match[0].Status)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Match) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schedule)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamAScore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamBScore)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

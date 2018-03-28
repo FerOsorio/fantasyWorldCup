@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "611da8675f85cffbfa95276f8f7f7fc40a35e505"
+    "signature": "acc7924532865762e92a06b573b8e82279e14005"
   },
   "compilationOptions": {
     "defines": [
@@ -237,7 +237,7 @@
           "Microsoft.Data.Sqlite.Core": "2.0.1",
           "Microsoft.EntityFrameworkCore": "2.0.2",
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
-          "Microsoft.EntityFrameworkCore.InMemory": "2.0.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.2",
           "Microsoft.EntityFrameworkCore.Relational": "2.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.2",
@@ -1632,7 +1632,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/2.0.1": {
+      "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.0.2"
         },
@@ -4058,6 +4058,7 @@
       "FantasyWorldCup.Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.2"
         },
         "runtime": {
@@ -4972,12 +4973,12 @@
       "path": "microsoft.entityframeworkcore.design/2.0.2",
       "hashPath": "microsoft.entityframeworkcore.design.2.0.2.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/2.0.1": {
+    "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PIkjqb3gqli8d86OX2HeQpPv5vGXareCuf2IBrVf1+GoIyveZlwLSmsRtqgR3yXPbdeDZzqjCq4X/BDocvYrPg==",
-      "path": "microsoft.entityframeworkcore.inmemory/2.0.1",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.2.0.1.nupkg.sha512"
+      "sha512": "sha512-ElVLhS/kaVByeh1I7mg9AcUVfZ/k55SMCW6BRRoXIMaAyUHw9n3EWhK7ThdBLp1Dek0UBwSD593jxGis2BqUGA==",
+      "path": "microsoft.entityframeworkcore.inmemory/2.0.2",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.2.0.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/2.0.2": {
       "type": "package",

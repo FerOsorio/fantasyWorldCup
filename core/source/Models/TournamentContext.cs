@@ -43,7 +43,7 @@ namespace FantasyWorldCup.Core.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source=tournaments.db");
+                optionsBuilder.UseInMemoryDatabase("InMemoryTournamentDb");
             }
         }
 

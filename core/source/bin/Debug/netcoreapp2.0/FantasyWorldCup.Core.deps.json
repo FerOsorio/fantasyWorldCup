@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "576461640e51fa8e40c297287886910edf26ab09"
+    "signature": "c3684ca1c1e82ad17a94cc89be27be60972da475"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
       "FantasyWorldCup.Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.0.2"
         },
         "runtime": {
@@ -45,6 +46,14 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/2.0.2": {
@@ -433,6 +442,13 @@
       "sha512": "sha512-cEqvei8LTLxJavvOH5OwQRjtfAlJF6RhnUyetv3M7hByXktkpedvhykH0TeJS0IQMfP3pU+9qclQpyrq9Ej4lQ==",
       "path": "microsoft.entityframeworkcore.design/2.0.2",
       "hashPath": "microsoft.entityframeworkcore.design.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ElVLhS/kaVByeh1I7mg9AcUVfZ/k55SMCW6BRRoXIMaAyUHw9n3EWhK7ThdBLp1Dek0UBwSD593jxGis2BqUGA==",
+      "path": "microsoft.entityframeworkcore.inmemory/2.0.2",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.2.0.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/2.0.2": {
       "type": "package",
