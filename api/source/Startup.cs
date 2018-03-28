@@ -29,6 +29,9 @@ namespace FantasyWorldCup.Api
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDbContext<FantasyWorldCup.Core.Models.TournamentContext>(options => 
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();

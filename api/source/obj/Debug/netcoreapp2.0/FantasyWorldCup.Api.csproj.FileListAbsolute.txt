@@ -1,4 +1,3 @@
-/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/app.db
 /Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.deps.json
 /Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.runtimeconfig.json
 /Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.runtimeconfig.dev.json
