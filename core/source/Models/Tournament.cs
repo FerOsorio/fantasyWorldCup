@@ -1,6 +1,14 @@
 namespace FantasyWorldCup.Core.Models
 {
+    using System;
     using System.Collections.Generic;
+
+    public enum MatchStatus
+    {
+        NotStarted = 0,
+        InProgress = 1, 
+        Completed = 2
+    }
 
     public class Tournament
     {
@@ -11,26 +19,23 @@ namespace FantasyWorldCup.Core.Models
         public List<Match> Matches { get; set; }
     }
 
-    public enum MatchStatus
-    {
-        NotStarted = 0,
-        InProgress = 1, 
-        Completed = 2
-    }
-
     public class Match
     {
         public int Id { get; set; }
+        public DateTimeOffset Schedule { get; set; }
 
-        public Team Local { get; set; }
+        public Tournament Tournament { get; set; }
 
-        public Team Visitor { get; set; }
+        public Team TeamA { get; set; }
 
-        public int LocalTeamScore { get; set; } = 0;
+        public Team TeamB { get; set; }
 
-        public int VisitorTeamScore { get; set; } = 0;
+        public int TeamAScore { get; set; } = 0;
 
-        public MatchStatus Status { get; set; }
+        public int TeamBScore { get; set; } = 0;
+
+        public MatchStatus Status { get; set; } = MatchStatus.NotStarted;
+
     }
 
     public class Team

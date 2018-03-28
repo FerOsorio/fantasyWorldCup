@@ -1,0 +1,15 @@
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.deps.json
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.runtimeconfig.json
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.runtimeconfig.dev.json
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.dll
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.pdb
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.dll
+/Users/fer/repo/fantasyWorldCup/core/test/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.pdb
+/Users/fer/repo/fantasyWorldCup/core/test/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.csproj.CoreCompileInputs.cache
+/Users/fer/repo/fantasyWorldCup/core/test/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.AssemblyInfoInputs.cache
+/Users/fer/repo/fantasyWorldCup/core/test/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.AssemblyInfo.cs
+/Users/fer/repo/fantasyWorldCup/core/test/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.dll
+/Users/fer/repo/fantasyWorldCup/core/test/obj/Debug/netcoreapp2.0/FantasyWorldCup.Core.Tests.pdb

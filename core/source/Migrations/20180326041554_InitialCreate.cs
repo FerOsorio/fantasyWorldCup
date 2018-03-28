@@ -9,7 +9,7 @@ namespace FantasyWorldCup.Core.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Team",
+                name: "Teams",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
@@ -17,7 +17,7 @@ namespace FantasyWorldCup.Core.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Team", x => x.Id);
+                    table.PrimaryKey("PK_Teams", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -34,64 +34,65 @@ namespace FantasyWorldCup.Core.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Match",
+                name: "Matches",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    LocalId = table.Column<string>(nullable: true),
-                    LocalTeamScore = table.Column<int>(nullable: false),
+                    Schedule = table.Column<DateTimeOffset>(nullable: false),
                     Status = table.Column<int>(nullable: false),
-                    TournamentId = table.Column<int>(nullable: true),
-                    VisitorId = table.Column<string>(nullable: true),
-                    VisitorTeamScore = table.Column<int>(nullable: false)
+                    TeamAId = table.Column<string>(nullable: true),
+                    TeamAScore = table.Column<int>(nullable: false),
+                    TeamBId = table.Column<string>(nullable: true),
+                    TeamBScore = table.Column<int>(nullable: false),
+                    TournamentId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Match", x => x.Id);
+                    table.PrimaryKey("PK_Matches", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Match_Team_LocalId",
-                        column: x => x.LocalId,
-                        principalTable: "Team",
+                        name: "FK_Matches_Teams_TeamAId",
+                        column: x => x.TeamAId,
+                        principalTable: "Teams",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Match_Tournaments_TournamentId",
+                        name: "FK_Matches_Teams_TeamBId",
+                        column: x => x.TeamBId,
+                        principalTable: "Teams",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Matches_Tournaments_TournamentId",
                         column: x => x.TournamentId,
                         principalTable: "Tournaments",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Match_Team_VisitorId",
-                        column: x => x.VisitorId,
-                        principalTable: "Team",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_LocalId",
-                table: "Match",
-                column: "LocalId");
+                name: "IX_Matches_TeamAId",
+                table: "Matches",
+                column: "TeamAId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Match_TournamentId",
-                table: "Match",
+                name: "IX_Matches_TeamBId",
+                table: "Matches",
+                column: "TeamBId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Matches_TournamentId",
+                table: "Matches",
                 column: "TournamentId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Match_VisitorId",
-                table: "Match",
-                column: "VisitorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Match");
+                name: "Matches");
 
             migrationBuilder.DropTable(
-                name: "Team");
+                name: "Teams");
 
             migrationBuilder.DropTable(
                 name: "Tournaments");

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
 namespace FantasyWorldCup.Core.Migrations
@@ -23,27 +24,29 @@ namespace FantasyWorldCup.Core.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("LocalId");
-
-                    b.Property<int>("LocalTeamScore");
+                    b.Property<DateTimeOffset>("Schedule");
 
                     b.Property<int>("Status");
 
-                    b.Property<int?>("TournamentId");
+                    b.Property<string>("TeamAId");
 
-                    b.Property<string>("VisitorId");
+                    b.Property<int>("TeamAScore");
 
-                    b.Property<int>("VisitorTeamScore");
+                    b.Property<string>("TeamBId");
+
+                    b.Property<int>("TeamBScore");
+
+                    b.Property<int>("TournamentId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LocalId");
+                    b.HasIndex("TeamAId");
+
+                    b.HasIndex("TeamBId");
 
                     b.HasIndex("TournamentId");
 
-                    b.HasIndex("VisitorId");
-
-                    b.ToTable("Match");
+                    b.ToTable("Matches");
                 });
 
             modelBuilder.Entity("FantasyWorldCup.Core.Models.Team", b =>
@@ -55,7 +58,7 @@ namespace FantasyWorldCup.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Team");
+                    b.ToTable("Teams");
                 });
 
             modelBuilder.Entity("FantasyWorldCup.Core.Models.Tournament", b =>
@@ -72,17 +75,18 @@ namespace FantasyWorldCup.Core.Migrations
 
             modelBuilder.Entity("FantasyWorldCup.Core.Models.Match", b =>
                 {
-                    b.HasOne("FantasyWorldCup.Core.Models.Team", "Local")
+                    b.HasOne("FantasyWorldCup.Core.Models.Team", "TeamA")
                         .WithMany()
-                        .HasForeignKey("LocalId");
+                        .HasForeignKey("TeamAId");
 
-                    b.HasOne("FantasyWorldCup.Core.Models.Tournament")
+                    b.HasOne("FantasyWorldCup.Core.Models.Team", "TeamB")
+                        .WithMany()
+                        .HasForeignKey("TeamBId");
+
+                    b.HasOne("FantasyWorldCup.Core.Models.Tournament", "Tournament")
                         .WithMany("Matches")
-                        .HasForeignKey("TournamentId");
-
-                    b.HasOne("FantasyWorldCup.Core.Models.Team", "Visitor")
-                        .WithMany()
-                        .HasForeignKey("VisitorId");
+                        .HasForeignKey("TournamentId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
