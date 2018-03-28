@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/core/test/FantasyWorldCup.Core.csproj"
+                "${workspaceFolder}/api/source/FantasyWorldCup.Api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
