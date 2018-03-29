@@ -1,0 +1,13 @@
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.deps.json
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.runtimeconfig.json
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.runtimeconfig.dev.json
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.dll
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Api.pdb
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Api.csproj.CoreCompileInputs.cache
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Api.AssemblyInfoInputs.cache
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Api.AssemblyInfo.cs
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Api.dll
+/Users/fer/repo/fantasyWorldCup/api/source/obj/Debug/netcoreapp2.0/FantasyWorldCup.Api.pdb
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.dll
+/Users/fer/repo/fantasyWorldCup/api/source/bin/Debug/netcoreapp2.0/FantasyWorldCup.Core.pdb
