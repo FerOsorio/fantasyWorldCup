@@ -20,9 +20,14 @@ namespace FantasyWorldCup.Api.Pages.Match
 
         public List<FantasyWorldCup.Core.Models.Match> Match { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(int tournamentId)
         {
-            Match = await _context.Matches.Include(i => i.TeamA).Include(i => i.TeamB).ToListAsync();
+            Match = await _context
+                .Matches
+                .Where(i => i.Tournament.Id == tournamentId)
+                .Include(i => i.TeamA)
+                .Include(i => i.TeamB)
+                .ToListAsync();
         }
     }
 }

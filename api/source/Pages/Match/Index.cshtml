@@ -16,17 +16,12 @@
                 <th>
                     Local
                 </th>
-                <th>
-                    Local Score
-                </th>
-                <th>
-                    Visitor Score
-                </th>
+                <th>&nbsp;</th>
                 <th>
                     Vsitor
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Match[0].TeamBScore)
+                    @Html.DisplayNameFor(model => model.Match[0].Schedule)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Match[0].Status)
@@ -42,17 +37,21 @@
                 @Html.DisplayFor(modelItem => item.TeamA.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TeamAScore)
+                <div class="row">
+                    <div class="col-md-2">@Html.DisplayFor(modelItem => item.TeamAScore)</div>
+                    <div class="col-md-2">-</div>
+                    <div class="col-md-2">@Html.DisplayFor(modelItem => item.TeamBScore)</div>
+                </div>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TeamBScore)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeamB.Name)
-                <img src="~/images/team/@(item.TeamB.Id).png" />
+                <div class="row">
+                    <div class="col-md-6">@Html.DisplayFor(modelItem => item.TeamB.Name)</div>
+                    <div class="col-md-1"><img src="~/images/team/@(item.TeamB.Id).png" /></div>
+                </div>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Schedule)
+                @(item.Schedule.ToLocalTime())
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
