@@ -104,5 +104,9 @@ namespace FantasyWorldCup.Core.Models
         public DbSet<Match> Matches { get; set; }
 
         public DbSet<Team> Teams { get; set; }
+
+        public DbSet<Group> Group { get; set; }
+
+        public DbSet<User> User { get; set; }
     }
 }
